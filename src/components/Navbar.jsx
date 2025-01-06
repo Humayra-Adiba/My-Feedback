@@ -1,11 +1,20 @@
 import { TbWorld } from "react-icons/tb";
 import { CiSearch } from "react-icons/ci";
-import { NavLink } from "react-router-dom";
-
+import { NavLink, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { Button } from "./ReuseableComponent/Button";
 
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+  const [value, setValue] = useState("");
+  const [country, setCountry] = useState("");
+  const nextPage = () => {
+    return value === "restaurant" && country === "singapour"
+      ? navigate("/restuarant")
+      : alert("Please select a restaurant & select a country");
+  };
 
   return (
     <section className="border-b border-[#ADADAD]">
@@ -17,14 +26,16 @@ const Navbar = () => {
         </div>
         <div className="flex justify-center items-center gap-2 border border-[#ADADAD] px-4 py-1 rounded-full">
           <select
-            className="text-secondary-PhilippineGray border-none outline-none"
+            onChange={(e) => setValue(e.target.value)}
+            className="text-[#7A7A7A] border-none outline-none"
           >
-            <option className="text-secondary-PhilippineGray">selected</option>
+            <option className="text-[#7A7A7A]">selected</option>
             <option value="restaurant">restaurant</option>
           </select>
           <hr className="bg-[#ADADAD] w-[1px] h-6 rotate-180" />
           <select
-            className="text-secondary-PhilippineGray border-none outline-none"
+            onChange={(e) => setCountry(e.target.value)}
+            className="text-[#7A7A7A] border-none outline-none"
           >
             <option className="text-[#7A7A7A]">
               select the country
@@ -36,6 +47,7 @@ const Navbar = () => {
           <button
             type="button"
             className="bg-primary rounded-full"
+            onClick={nextPage}
           >
             <CiSearch className="w-10 h-10 bg-[#1677BD] text-white rounded-full p-2" />
           </button>
