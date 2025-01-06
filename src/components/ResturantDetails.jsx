@@ -2,6 +2,15 @@ import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FiClock } from "react-icons/fi";
 import { Button } from "./ReuseableComponent/Button";
+import { cn } from "../lib/utils";
+
+const Progress = ({ max }) => {
+  return (
+    <div className="w-[200px] sm:w-[240px] md:w-[270px] lg:w-[380px] h-2 bg-gray-400 rounded-md">
+      <div className={cn("bg-[#1677BD] h-2 rounded-md ", max)}></div>
+    </div>
+  );
+};
 
 const Hero = () => {
   return (
@@ -162,12 +171,62 @@ const MoreInformations = () => {
   );
 };
 
+const OverAllRating = () => {
+  return (
+    <section className="w-[80%] mx-auto my-16 space-y-3">
+      <div className="flex flex-col sm:flex-row justify-start gap-16 items-start ">
+        <div className="flex items-start justify-center gap-4">
+          <div>
+            <img src="/ratingbadge.png" alt="" />
+          </div>
+          <div className="space-y-2">
+            <h1 className="font-roboto font-bold text-xl sm:text-heading  leading-6 sm:leading-9 text-EerieBlack">
+              Overall rating
+            </h1>
+            <p className="font-roboto text-[19px] leading-[22px] text-[#838383]">
+              834 Reviews
+            </p>
+            <div className="flex items-center gap-3">
+              {Array.from(Array(5).keys()).map((el) => (
+                <img src="/star.png" alt="" key={el} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1">
+          <div className="flex gap-2 items-center">
+            <p>5 star</p>
+            <Progress max="w-[100%]" />
+          </div>
+          <div className="flex gap-2 items-center">
+            <p>4 star</p>
+            <Progress max="w-[70%]" />
+          </div>
+          <div className="flex gap-2 items-center">
+            <p>3 star</p>
+            <Progress max="w-[50%]" />
+          </div>
+          <div className="flex gap-2 items-center">
+            <p>2 star</p>
+            <Progress max="w-[30%]" />
+          </div>
+          <div className="flex gap-2 items-center">
+            <p>1 star</p>
+            <Progress max="w-[10%]" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 function ResturantDetails() {
   return (
     <>
       <Hero />
       <MagnificentPlaces />
       <MoreInformations />
+      <OverAllRating/>
     </>
   );
 }
