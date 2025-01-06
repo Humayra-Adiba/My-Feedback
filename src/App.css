@@ -1,0 +1,6 @@
+button.slick-arrow.slick-next {
+    @apply bg-black rounded-2xl;
+  }
+  button.slick-arrow.slick-prev {
+    @apply bg-black rounded-2xl;
+  }

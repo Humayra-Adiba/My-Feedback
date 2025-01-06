@@ -35,7 +35,7 @@ const AllRestaurants = () => {
     setIsOpen(!isOpen);
   };
   const nextPage = () => {
-    return navigate("/restaurantDetails");
+    return navigate("/Restaurant_Details");
   };
   const sortByRating = () => {
     const sorted = [...sortedProducts].sort((a, b) => b.star - a.star);

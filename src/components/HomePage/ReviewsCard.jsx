@@ -2,7 +2,7 @@ import { LuUserRound } from "react-icons/lu";
 const ReviewsCard = ({ items }) => {
   return (
     <>
-      <div className="space-y-4 flex flex-col items-stretch space-x-4 w-fit px-6 py-3 bg-[#F8F8F8] rounded-md">
+      <div className="space-y-4 flex flex-col items-stretch space-x-4 w-fit px-6 py-3 bg-[#F8F8F8 rounded-md">
         <div className="flex items-center gap-1">
           <div className="bg-white p-2 rounded-full">
             <LuUserRound size={30} />
