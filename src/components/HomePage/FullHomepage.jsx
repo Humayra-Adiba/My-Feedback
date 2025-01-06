@@ -4,6 +4,7 @@ import FirstCarousel from './FirstCarousel'
 import Trends from './Trends'
 import MyFeedback from './MyFeedback'
 import Reviews from './Reviews'
+import Footer from '../Footer'
 function FullHomepage() {
   return (
     <>
@@ -12,6 +13,7 @@ function FullHomepage() {
       <Trends/>
       <MyFeedback/>
       <Reviews/>
+      <Footer/>
     </>
   )
 }

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "image": "/res1.png",
+    "title": "The snug",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  },
+  {
+    "id": 2,
+    "image": "/res2.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(1654 reviews)"
+  },
+  {
+    "id": 3,
+    "image": "/res3.png",
+    "title": "Little Shucker",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 3,
+    "rating": "3.0",
+    "totalReviews": "(553 reviews)"
+  },
+  {
+    "id": 4,
+    "image": "/res4.png",
+    "title": "Lokma",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  },
+  {
+    "id": 5,
+    "image": "/res5.png",
+    "title": "Starbelly",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  },
+  {
+    "id": 6,
+    "image": "/res6.png",
+    "title": "The melt",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  },
+  {
+    "id": 7,
+    "image": "/res2.png",
+    "title": "Arabia Nights",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  }
+]
