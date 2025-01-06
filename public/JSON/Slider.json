@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "image": "/c1.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  },
+  {
+    "id": 2,
+    "image": "/c2.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  },
+  {
+    "id": 3,
+    "image": "/c3.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  },
+  {
+    "id": 4,
+    "image": "/c4.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  },
+  {
+    "id": 5,
+    "image": "/c1.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  },
+  {
+    "id": 6,
+    "image": "/c2.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  },
+  {
+    "id": 7,
+    "image": "/c3.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  },
+  {
+    "id": 8,
+    "image": "/c4.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "rating": 5,
+    "totalReviews": "876 (reviews)"
+  }
+]

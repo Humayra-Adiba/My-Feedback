@@ -1,15 +1,15 @@
+import FullHomepage from "./components/HomePage/FullHomepage"
 import Navbar from "./components/Navbar"
-import {BrowserRouter, Routes} from 'react-router-dom'
-import AllTopic from './components/HomePage/AllTopic'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 function App() {
 
 
   return (
     <BrowserRouter>
     <Navbar/>
-    <AllTopic/>
-      <Routes>
 
+      <Routes>
+        <Route path="/" element={<FullHomepage/>}/>
       </Routes>
     </BrowserRouter>
   )
