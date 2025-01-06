@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "image": "/trend1.png",
+    "title": "Bella Italia",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.8",
+    "totalReviews": "(34 reviews)"
+  },
+  {
+    "id": 2,
+    "image": "/trend2.png",
+    "title": "Little Shucker",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(253 reviews)"
+  },
+  {
+    "id": 3,
+    "image": "/trend3.png",
+    "title": "Marafuku Ramen",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 3,
+    "rating": "3.5",
+    "totalReviews": "(87 reviews)"
+  },
+  {
+    "id": 4,
+    "image": "/trend4.png",
+    "title": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(876 reviews)"
+  },
+  {
+    "id": 5,
+    "image": "/trend5.png",
+    "title": "Arabia Nights",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 3,
+    "rating": "3.5",
+    "totalReviews": "(334 reviews)"
+  },
+  {
+    "id": 6,
+    "image": "/trend6.png",
+    "title": "Lokma",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(253 reviews)"
+  },
+  {
+    "id": 7,
+    "image": "/trend7.png",
+    "title": "The snug",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  },
+  {
+    "id": 8,
+    "image": "/trend8.png",
+    "title": "Starbelly",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(876 reviews)"
+  },
+  {
+    "id": 9,
+    "image": "/trend9.png",
+    "title": "Iori",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 3,
+    "rating": "3.5",
+    "totalReviews": "(334 reviews)"
+  },
+  {
+    "id": 10,
+    "image": "/trend10.png",
+    "title": "Ngalley",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(253 reviews)"
+  },
+  {
+    "id": 11,
+    "image": "/trend11.png",
+    "title": "diogonal",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  },
+  {
+    "id": 12,
+    "image": "/trend12.png",
+    "title": "Kitoko",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(876 reviews)"
+  }
+]
