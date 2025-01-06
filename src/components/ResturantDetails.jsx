@@ -1,12 +1,14 @@
 import React from "react";
+import Footer from './Footer'
 import { CiLocationOn } from "react-icons/ci";
 import { FiClock } from "react-icons/fi";
 import { Button } from "./ReuseableComponent/Button";
 import { cn } from "../lib/utils";
 import { RxCross2 } from "react-icons/rx";
 import { LuUserRound } from "react-icons/lu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SortCard from "./ReuseableComponent/Sort";
+import Card from "./ReuseableComponent/Card";
 
 
 const Progress = ({ max }) => {
@@ -109,6 +111,29 @@ const ReviewCard = ({ items }) => {
         </p>
       </div>
     </div>
+  );
+};
+
+const Discover = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("/JSON/Discover.json")
+      .then((res) => res.json())
+      .then((jsonData) => setData(jsonData));
+  }, []);
+  return (
+    <section className="w-[80%] mx-auto my-16">
+      <div>
+        <h1 className="font-lexend font-extrabold text-xl sm:text-heading leading-6 sm:leading-10 text-EerieBlack1E">
+          Also discover...
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+          {data.map((item, i) => (
+            <Card key={i} items={item} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
@@ -472,6 +497,8 @@ function ResturantDetails() {
       <MoreInformations />
       <OverAllRating/>
       <Reviews/>
+      <Discover/>
+      <Footer/>
     </>
   );
 }

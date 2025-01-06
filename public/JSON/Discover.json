@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "image": "/discover1.png",
+    "title": "The melt",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 3,
+    "rating": "3.5",
+    "totalReviews": "(334 reviews)"
+  },
+  {
+    "id": 2,
+    "image": "/discover2.png",
+    "title": "Lokma",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 5,
+    "rating": "5.0",
+    "totalReviews": "(253 reviews)"
+  },
+  {
+    "id": 3,
+    "image": "/discover3.png",
+    "title": "The snug",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "star": 4,
+    "rating": "4.5",
+    "totalReviews": "(654 reviews)"
+  }
+]
