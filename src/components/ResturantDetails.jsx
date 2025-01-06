@@ -49,49 +49,127 @@ const Hero = () => {
 };
 
 const MagnificentPlaces = () => {
-    return (
-      <section className="w-[80%] mx-auto my-24">
-        <div>
-          <h1 className=" font-semibold text-[34px] leading-[42px] md:text-start text-center ">
-            Discover our magnificent place in photos
-          </h1>
-          <p className="font-roboto text-base leading-[18px] text-[#5E5E5E] my-5 max-w-lg">
-            The lorem ipsum is, in printing, a series of meaningless words used
-            temporarily to calibrate a layout.The lorem ipsum is, in printing.
-          </p>
+  return (
+    <section className="w-[80%] mx-auto my-24">
+      <div>
+        <h1 className=" font-semibold text-[34px] leading-[42px] md:text-start text-center ">
+          Discover our magnificent place in photos
+        </h1>
+        <p className="font-roboto text-base leading-[18px] text-[#5E5E5E] my-5 max-w-lg">
+          The lorem ipsum is, in printing, a series of meaningless words used
+          temporarily to calibrate a layout.The lorem ipsum is, in printing.
+        </p>
+      </div>
+      <div>
+        <div className="flex flex-col sm:flex-row items-center gap-6 my-16">
+          <div className="relative">
+            <img src="/magnificent1.png" alt="" className="cursor-pointer" />
+            <div className="absolute bottom-5 left-5">
+              <Button className="bg-white text-black flex gap-3 items-center">
+                <img src="/grid.png" alt="" />
+                View all photos (7)
+              </Button>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <img src="/magnificent2.png" alt="" className="cursor-pointer" />
+            <img src="/magnificent3.png" alt="" className="cursor-pointer" />
+          </div>
+          <div className="space-y-4">
+            <img src="/magnificent4.png" alt="" className="cursor-pointer" />
+            <img src="/magnificent5.png" alt="" className="cursor-pointer" />
+          </div>
         </div>
-        <div>
-          <div className="flex flex-col sm:flex-row items-center gap-6 my-16">
-            <div className="relative">
-              <img src="/magnificent1.png" alt="" className="cursor-pointer" />
-              <div className="absolute bottom-5 left-5">
-                <Button className="bg-white text-black flex gap-3 items-center">
-                  <img src="/grid.png" alt="" />
-                  View all photos (7)
-                </Button>
+      </div>
+    </section>
+  );
+};
+
+const MoreInformations = () => {
+  const socialIcons = [
+    {
+      src: "/fb.png",
+    },
+    {
+      src: "/instra.png",
+    },
+    {
+      src: "/tiktok.png",
+    },
+    {
+      src: "/wp.png",
+    },
+  ];
+
+  return (
+    <>
+      <section className="w-[80%] mx-auto mt-12 sm:mt-24 mb-8">
+        <div className="flex flex-col sm:flex-row items-start justify-between gap-4 ">
+          <div className="space-y-12">
+            <h1 className="font-lexend font-semibold text-xl sm:text-[34px]  leading-7 sm:leading-[42px]">
+              More informations
+            </h1>
+            <div className="space-y-6">
+              <div className="flex gap-3 items-center">
+                <img src="/spon.png" alt="" />
+                <button className="border-b border-gray-800 font-roboto text-xl leading-6 text-EerieBlack">
+                  See the menu
+                </button>
+              </div>
+              <div className="flex gap-3 items-center">
+                <img src="/call.png" alt="" />
+                <p className="font-roboto text-xl leading-6 text-EerieBlack">
+                  +847 87 37 29 01
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <img src="/location.png" alt="" />
+                <p className="font-roboto text-xl leading-6 text-EerieBlack">
+                  Singapour, Bishan
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <img src="/clock.png" alt="" />
+                <p className="font-roboto text-xl leading-6 text-EerieBlack">
+                  7j/7, 08:00 - 22:00
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <img src="/link.png" alt="" />
+                <a
+                  href="#"
+                  className="border-b border-gray-800 font-roboto text-xl leading-6 text-EerieBlack"
+                >
+                  www.bellaitalia.com
+                </a>
               </div>
             </div>
-            <div className="space-y-4">
-              <img src="/magnificent2.png" alt="" className="cursor-pointer" />
-              <img src="/magnificent3.png" alt="" className="cursor-pointer" />
+            <div className="flex items-center gap-4">
+              {socialIcons.map((icon, index) => (
+                <a key={index} href="#">
+                  <img src={icon.src} alt="" />
+                </a>
+              ))}
             </div>
-            <div className="space-y-4">
-              <img src="/magnificent4.png" alt="" className="cursor-pointer" />
-              <img src="/magnificent5.png" alt="" className="cursor-pointer" />
-            </div>
+          </div>
+          <div>
+            <img src="/secondMap.png" alt="" />
           </div>
         </div>
       </section>
-    );
-  };
+      <hr className="w-full h-[1px] bg-[#DCDCDC]" />
+    </>
+  );
+};
 
 function ResturantDetails() {
-  return(
+  return (
     <>
-        <Hero/>
-        <MagnificentPlaces/>
+      <Hero />
+      <MagnificentPlaces />
+      <MoreInformations />
     </>
-  )
+  );
 }
 
 export default ResturantDetails;
