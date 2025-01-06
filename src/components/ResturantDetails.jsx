@@ -3,6 +3,11 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiClock } from "react-icons/fi";
 import { Button } from "./ReuseableComponent/Button";
 import { cn } from "../lib/utils";
+import { RxCross2 } from "react-icons/rx";
+import { LuUserRound } from "react-icons/lu";
+import { useState } from "react";
+import SortCard from "./ReuseableComponent/Sort";
+
 
 const Progress = ({ max }) => {
   return (
@@ -11,6 +16,102 @@ const Progress = ({ max }) => {
     </div>
   );
 };
+
+
+const FilterCard = ({ handleOpen, filteredItems }) => {
+  return (
+    <div className="bg-white shadow-md p-8 rounded-md border border-[#E6E6E6] relative flex flex-col items-center gap-5 w-fit">
+      <div className="absolute top-2 right-2">
+        <button type="button" onClick={handleOpen}>
+          <RxCross2 />
+        </button>
+      </div>
+      <h1 className="font-roboto font-bold text-[22px] leading-6 text-EerieBlack text-center">
+        Filter by Rating
+      </h1>
+      <button
+        type="button"
+        className="font-roboto text-base leading-5 text-[#E8A641] flex items-center gap-3 "
+        onClick={() => filteredItems(5)}
+      >
+        5
+        {Array.from(Array(5).keys()).map((el) => (
+          <img key={el} src="/star.png" alt="" />
+        ))}
+      </button>
+      <button
+        type="button"
+        className="font-roboto text-base leading-5 text-[#E8A641] flex items-center gap-3"
+        onClick={() => filteredItems(4)}
+      >
+        4
+        {Array.from(Array(4).keys()).map((el) => (
+          <img key={el} src="/star.png" alt="" />
+        ))}
+      </button>
+      <button
+        type="button"
+        className="font-roboto text-base leading-5 text-[#E8A641] flex items-center gap-3"
+        onClick={() => filteredItems(3)}
+      >
+        3
+        {Array.from(Array(3).keys()).map((el) => (
+          <img key={el} src="/star.png" alt="" />
+        ))}
+      </button>
+      <button
+        type="button"
+        className="font-roboto text-base leading-5 text-[#E8A641] flex items-center gap-3"
+        onClick={() => filteredItems(2)}
+      >
+        2
+        {Array.from(Array(2).keys()).map((el) => (
+          <img key={el} src="/star.png" alt="" />
+        ))}
+      </button>
+      <button
+        type="button"
+        className="font-roboto text-base leading-5 text-[#E8A641] flex items-center gap-3"
+        onClick={() => filteredItems(1)}
+      >
+        1
+        {Array.from(Array(1).keys()).map((el) => (
+          <img key={el} src="/star.png" alt="" />
+        ))}
+      </button>
+    </div>
+  );
+};
+
+const ReviewCard = ({ items }) => {
+  return (
+    <div className="flex items-start gap-2 w-full p-4 rounded-2xl bg-[#F8F8F8]">
+      <div className="bg-gray-100 rounded-full p-1">
+        <LuUserRound className="h-8 w-8" />
+      </div>
+      <div className="space-y-3">
+        <h1 className="font-roboto font-semibold text-[21px] leading-6 text-EerieBlack">
+          {items.name}
+        </h1>
+        <p className="font-roboto text-base leading-5 text-[#BABABA]">
+          {items.location}
+        </p>
+        <div className="flex items-end gap-2">
+          {Array.from(Array(items.star).keys()).map((el) => (
+            <img src="/star.png" alt="" key={el} />
+          ))}
+          <p className="font-roboto text-sm leading-4 text-[#343434]">
+            {items.date}
+          </p>
+        </div>
+        <p className="font-roboto text-base leading-[18px] w-full sm:max-w-md text-[#5E5E5E] pt-4">
+          {items.des}
+        </p>
+      </div>
+    </div>
+  );
+};
+
 
 const Hero = () => {
   return (
@@ -220,6 +321,149 @@ const OverAllRating = () => {
   );
 };
 
+const Reviews = () => {
+
+  const review = [
+    {
+      name: "Wei Jie",
+      location: "Singapore, Little india",
+      date: "29/11/2023",
+      star: 5,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Mei Ling",
+      location: "Singapore, Orchad boulevard",
+      date: "09/05/2023",
+      star: 3,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Wei Xiong",
+      location: "Singapore, Takashimaya",
+      date: "01/05/2023",
+      star: 4,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Ming Wei",
+      location: "Singapore, Little india",
+      date: "31/04/2023",
+      star: 3,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Xin Yi",
+      location: "Singapore, Zen rooms",
+      date: "30/04/2023",
+      star: 2,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Zhi Hao",
+      location: "Singapore, Boon Keng",
+      date: "27/03/2023",
+      star: 5,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Li Hua",
+      location: "Singapore, DLLM loklok",
+      date: "24/03/2023",
+      star: 1,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Si Ying",
+      location: "Singapore, Bedemeer",
+      date: "11/03/2023",
+      star: 5,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+    {
+      name: "Wei Ting",
+      location: "Singapore, Toa Payoh",
+      date: "28/02/2023",
+      star: 5,
+      des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenSort, setIsOpenSort] = useState(false);
+  const [data, setData] = useState(review);
+  const handleOpenFilter = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleOpenSort = () => {
+    setIsOpenSort(!isOpenSort);
+  };
+  const filteredItems = (rating) => {
+    const fil = [...review].filter((el) => el.star === rating);
+    return setData(fil);
+  };
+  const sortByRatingHighToLow = () => {
+    const sorted = [...review].sort((a, b) => b.star - a.star);
+    setData(sorted);
+  };
+  const sortByRatingLowToHigh = () => {
+    const sorted = [...review].sort((a, b) => a.star - b.star);
+    setData(sorted);
+  };
+  const defaultSort = () => {
+    setData(review);
+  };
+  return (
+    <>
+      <hr className="w-full h-[1px] bg-[#D3D3D3]" />
+      <section className="w-[80%] mx-auto my-16">
+        <div className="flex gap-8 items-center">
+          <button
+            className="bg-white text-EerieBlack border border-EerieBlack hover:bg-gray-300 px-6 py-2 rounded-full flex items-center gap-2"
+            onClick={handleOpenFilter}
+          >
+            <img src="/filter.png" alt="" /> filter
+          </button>
+          <button
+            className="bg-white text-EerieBlack border border-EerieBlack hover:bg-gray-300 px-6 py-2 rounded-full flex items-center gap-2"
+            onClick={handleOpenSort}
+          >
+            <img src="/sort.png" alt="" /> Sort
+          </button>
+        </div>
+        <div>
+          {isOpen ? (
+            <FilterCard
+              handleOpen={handleOpenFilter}
+              filteredItems={filteredItems}
+            />
+          ) : null}
+        </div>
+        <div>
+          {isOpenSort ? (
+            <SortCard
+              handleOpen={handleOpenSort}
+              sortedhightolow={sortByRatingHighToLow}
+              sortByRatinglowtohigh={sortByRatingLowToHigh}
+              defaultSort={defaultSort}
+            />
+          ) : null}
+        </div>
+        <div className="mt-8 space-y-3">
+          {data.map((items, i) => (
+            <ReviewCard key={i} items={items} />
+          ))}
+        </div>
+        <div className="flex justify-center my-16">
+          <Button className="bg-[#1677BD]">Show more reviews</Button>
+        </div>
+      </section>
+    </>
+  );
+};
+
+
+
 function ResturantDetails() {
   return (
     <>
@@ -227,6 +471,7 @@ function ResturantDetails() {
       <MagnificentPlaces />
       <MoreInformations />
       <OverAllRating/>
+      <Reviews/>
     </>
   );
 }
