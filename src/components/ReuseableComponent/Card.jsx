@@ -18,7 +18,7 @@ const Card = ({
           alt=""
           className={cn("w-[285px] h-[213px]", imageClass)}
         />
-        <div className="space-y-2">
+        <div className="space-y-6 mt-4">
           <h1
             className={cn(
               "font-semibold font-roboto text-[19px] text-EerieBlack leading-5",
@@ -29,7 +29,7 @@ const Card = ({
           </h1>
           <p
             className={cn(
-              "text-[#8F8F8F] font-roboto text-sm leading-4 w-[80%]",
+              "text-[#8F8F8F] font-roboto text-[16px] leading-[18.75px] w-[75%]",
               desClass
             )}
           >
@@ -39,7 +39,7 @@ const Card = ({
             {Array.from(Array(items.star).keys()).map((el) => (
               <img src="/star.png" alt="" key={el} />
             ))}
-            <div className="flex">
+            <div className="flex ">
               <p className={cn("font-roboto font-semibold text-sm leading-4 ")}>
                 {items.rating}
               </p>

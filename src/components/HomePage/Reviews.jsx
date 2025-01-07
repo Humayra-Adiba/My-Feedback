@@ -40,7 +40,7 @@ const Reviews = () => {
   };
   return (
     <>
-      <div className="w-[90%] mx-auto py-12 md:py-24">
+      <div className="bg-white p-8 w-[95%] mx-auto rounded-md">
         <h1 className="font-extrabold text-xl sm:text-[32px] leading-10  mb-12">
           Recents avtivities
         </h1>

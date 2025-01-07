@@ -56,9 +56,12 @@ const AllRestaurants = () => {
           <div>
             
             <div className="relative flex justify-around items-center">
+              <div className="fiex flex-col ">
+              <p className="font-bold text-[16px]">Home / All restaurants</p>
               <h1 className="font-extrabold text-xl md:text-[32px] leading-10  my-2">
                 best restaurants in singapore
               </h1>
+              </div>
               <button
                 className="border border-[#5E5E5E]  px-6 py-2 rounded-full  items-center bg-[#5E5E5E] text-white flex gap-[3px] hover:bg-primary hover:text-EerieBlack"
                 onClick={handleOpen}
@@ -81,13 +84,13 @@ const AllRestaurants = () => {
               {sortedProducts.map((items) => (
                 <Card
                   key={items.id}
-                  className="flex flex-col sm:flex-row gap-2 border-b border-[#DCDCDC] hover:cursor-pointer"
+                  className="flex flex-col sm:flex-row lg:gap-6 gap-3 lg:pb-9 pb-5 border-b border-[#DCDCDC] hover:cursor-pointer"
                   onClick={nextPage}
                   items={items}
                 />
               ))}
             </div>
-            <Button className="bg-[#1677BD]">Show more</Button>
+            <Button className="bg-[#1677BD] lg:px-9 px-5 py-2">Show more</Button>
           </div>
         </div>
         <div>

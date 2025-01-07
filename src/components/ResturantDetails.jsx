@@ -124,7 +124,7 @@ const Discover = () => {
   return (
     <section className="w-[80%] mx-auto my-16">
       <div>
-        <h1 className="font-lexend font-extrabold text-xl sm:text-heading leading-6 sm:leading-10 text-EerieBlack1E">
+        <h1 className="font-bold text-[32px] sm:text-[28px] leading-6 sm:leading-10 text-[#1E1E1E]">
           Also discover...
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
@@ -141,6 +141,9 @@ const Discover = () => {
 const Hero = () => {
   return (
     <>
+    <div className="py-5 ps-24">
+        <p className="text-[16px] leading-[18.75px] font-bold">Home / BellaItalia</p>
+      </div>
       <section className="bg-[url('/details-hero-bg.png')] bg-no-repeat bg-cover bg-center w-full mb-24">
         <div className="bg-[url('/gray.png')] bg-no-repeat bg-cover bg-center w-full mb-24 py-8 md:py-16 px-6 md:px-10">
           <div className="space-y-3 md:space-y-5">
@@ -176,9 +179,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="flex justify-center -mt-40">
-        <img src="/details-hero-logo.png" alt="" />
-      </div>
     </>
   );
 };
@@ -223,16 +223,16 @@ const MagnificentPlaces = () => {
 const MoreInformations = () => {
   const socialIcons = [
     {
-      src: "/fb.png",
+      src: "/Vector-7.png",
     },
     {
-      src: "/instra.png",
+      src: "/Vector-4.png",
     },
     {
-      src: "/tiktok.png",
+      src: "/Vector-5.png",
     },
     {
-      src: "/wp.png",
+      src: "/Vector-6.png",
     },
   ];
 
@@ -246,31 +246,31 @@ const MoreInformations = () => {
             </h1>
             <div className="space-y-6">
               <div className="flex gap-3 items-center">
-                <img src="/spon.png" alt="" />
+                <img src="/Vector-2.png" alt="" />
                 <button className="border-b border-gray-800 font-roboto text-xl leading-6 text-EerieBlack">
                   See the menu
                 </button>
               </div>
               <div className="flex gap-3 items-center">
-                <img src="/call.png" alt="" />
+                <img src="/vector0.png" alt="" />
                 <p className="font-roboto text-xl leading-6 text-EerieBlack">
                   +847 87 37 29 01
                 </p>
               </div>
               <div className="flex gap-3 items-center">
-                <img src="/location.png" alt="" />
+                <img src="/Vector.png" alt="" />
                 <p className="font-roboto text-xl leading-6 text-EerieBlack">
                   Singapour, Bishan
                 </p>
               </div>
               <div className="flex gap-3 items-center">
-                <img src="/clock.png" alt="" />
+                <img src="/Vector-1.png" alt="" />
                 <p className="font-roboto text-xl leading-6 text-EerieBlack">
                   7j/7, 08:00 - 22:00
                 </p>
               </div>
               <div className="flex gap-3 items-center">
-                <img src="/link.png" alt="" />
+                <img src="/vectorrr.png" alt="" />
                 <a
                   href="#"
                   className="border-b border-gray-800 font-roboto text-xl leading-6 text-EerieBlack"
